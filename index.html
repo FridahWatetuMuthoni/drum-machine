@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="drum-machine" id="drum-machine">
+        <section class="drum-pads" id="drum-pads">
+          <button type="button" value="Q" class="drum-pad">
+            <audio src="./music/Heater-1.mp3"></audio>
+            Q
+          </button>
+          <button value="W" class="drum-pad">
+            <audio src="./music/Heater-2.mp3"></audio>
+            W
+          </button>
+          <button value="E" class="drum-pad">
+            <audio src="./music/Heater-3.mp3"></audio> E
+          </button>
+          <button value="A" class="drum-pad">
+            <audio src="./music/Heater-4.mp3"></audio> A
+          </button>
+          <button value="S" class="drum-pad">
+            <audio src="./music/clap.mp3"></audio> S
+          </button>
+          <button value="D" class="drum-pad">
+            <audio src="./music/open-hh.mp3"></audio> D
+          </button>
+          <button value="Z" class="drum-pad">
+            <audio src="./music/Kick_n_Hat.mp3"></audio> Z
+          </button>
+          <button value="X" class="drum-pad">
+            <audio src="./music/kick.mp3"></audio> X
+          </button>
+          <button value="C" class="drum-pad">
+            <audio src="./music/closed-hh.mp3"></audio> C
+          </button>
+        </section>
+        <section class="dashboard">
+          <div>
+            <h4>Power</h4>
+            <section class="power">
+              <span class="span1"></span>
+              <span class="span2"></span>
+            </section>
+          </div>
+
+          <section class="clap" id="display"></section>
+          <section class="volume" id="volume">
+            <section class="control-line" id="control-line"></section>
+            <section class="control" id="control"></section>
+          </section>
+          <div>
+            <h4>Bank</h4>
+            <section class="bank">
+              <span class="span1"></span>
+              <span class="span2"></span>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>

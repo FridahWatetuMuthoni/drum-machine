@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  line-height: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-machine {
+  width: 600px;
+  height: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: purple;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  gap: 20px;
+}
+
+.drum-pad {
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.power,
+.bank {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.power .span1 {
+  background-color: black;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.power span:nth-child(2) {
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.bank .span1 {
+  background-color: white;
+
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.bank span:nth-child(2) {
+  background-color: black;
+  border-radius: 0 10px 10px 0;
+}
+
+.clap {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.volume {
+  width: 100%;
+  position: relative;
+}
+
+.control-line {
+  width: 100%;
+  margin: 0 auto;
+  height: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.control {
+  position: absolute;
+  height: 30px;
+  width: 6px;
+  border-radius: 20px;
+  background-color: white;
+  top: -8px;
+  left: 10px;
+}
